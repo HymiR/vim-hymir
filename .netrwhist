@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/etc/portage/savedconfig'
+let g:netrw_dirhist_2='/etc/portage/savedconfig/sys-kernel'
+let g:netrw_dirhist_3='/home/hymir/.purple/certificates/x509/tls_peers'
+let g:netrw_dirhist_4='/home/hymir/Entwicklung/cxx/Projekte/i2p-cpp/build/CMakeFiles'
+let g:netrw_dirhist_5='/usr/portage/media-video/ffmpeg'

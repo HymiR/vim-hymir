@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# small script to update all plugins.
+#
+
+for i in ~/.vim/bundle/*
+do
+	cd $i
+
+	if [ -d .git ]; then
+		printf "updating \033[01;34m$(basename $i)\033[00m\n"
+		git pull
+	fi
+
+	# update pathogen itselve!
+	if [[ $(basename $i) == "vim-pathogen" ]]; then
+		diff -q autoload/pathogen.vim ../../autoload/pathogen.vim > /dev/null
+
+		if [[ ! $? ]]; then
+			cp -v autoload/pathogen.vim ../../autoload/pathogen.vim
+		fi
+	fi
+done
