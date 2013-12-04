@@ -25,6 +25,3 @@
 [submodule "bundle/rainbow-parentheses-improved"]
 	path = bundle/rainbow-parentheses-improved
 	url = https://github.com/vim-scripts/Rainbow-Parentheses-Improved-and2.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
