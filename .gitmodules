@@ -34,3 +34,6 @@
 [submodule "bundle/rainbow"]
 	path = bundle/rainbow
 	url = https://github.com/vim-scripts/Rainbow-Parentheses-Improved-and2.git
+[submodule "bundle/vim-jedi"]
+	path = bundle/vim-jedi
+	url = https://github.com/davidhalter/jedi-vim.git
