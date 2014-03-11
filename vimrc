@@ -53,7 +53,7 @@ autocmd BufEnter ?akefile*,*.html,*.css,*.th set noci
 let g:syntastic_c_config_file = '.compiler-opts'
 let g:syntastic_cpp_config_file = '.compiler-opts'
 let g:syntastic_check_on_open = 1
-"let g:syntastic_c_checker = 'clang'
+let g:syntastic_c_checker = 'clang'
 let g:syntastic_cpp_compiler = 'clang++'
 
 " Syntastic statusline settings
