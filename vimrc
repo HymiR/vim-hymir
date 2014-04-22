@@ -50,16 +50,18 @@ autocmd BufEnter ?akefile*,*.html,*.css,*.th set noci
 
 " Clang compilation options file for Syntastic (if needed)
 " As well as syntastic syntax checker options...
-let g:syntastic_c_config_file = '.compiler-opts'
-let g:syntastic_cpp_config_file = '.compiler-opts'
+"let g:syntastic_c_config_file = '.compiler-opts'
+"let g:syntastic_cpp_config_file = '.compiler-opts'
 let g:syntastic_check_on_open = 1
-let g:syntastic_c_checker = 'clang'
-let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_auto_refresh_includes = 1
+let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall'
+let g:syntastic_cpp_include_dirs = [ 'cgutils', 'include/cgutils' ]
+"let g:syntastic_cpp_compiler = 'clang++'
 
 " Syntastic statusline settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 
 " ycm config stuff
