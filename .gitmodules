@@ -40,3 +40,6 @@
 [submodule "bundle/csv"]
 	path = bundle/csv
 	url = https://github.com/chrisbra/csv.vim.git
+[submodule "bundle/vcscommand"]
+	path = bundle/vcscommand
+	url = https://github.com/vim-scripts/vcscommand.vim.git
