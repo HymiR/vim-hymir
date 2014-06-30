@@ -29,6 +29,8 @@ set wildignore=*.o,*.pyc,*.class
 set pumheight=15	" limit popup window to 15 lines
 set mouse=n			" activate mouse interaction in normal mode
 set history=700
+set laststatus=2	" always enable statusline
+set exrc				" allow .vimrc reading within current dir
 
 set cot="menu,menuone,longest"			" disable scratch preview
 
