@@ -32,7 +32,7 @@ set history=700
 set laststatus=2	" always enable statusline
 set exrc				" allow .vimrc reading within current dir
 
-set cot="menu,menuone,longest"			" disable scratch preview
+set cot="menuone, longest"			" disable scratch preview
 
 
 " gentoo-syntax aktivieren...
@@ -47,7 +47,6 @@ au BufNewFile,BufRead *.gapp,*.pom,*.qrc setf xml
 
 " AUTO-COMMANDS
 autocmd BufEnter ?akefile*,*.html,*.css,*.th set noci
-"autocmd FileType java set omnifunc=javacomplete#Complete  " NOTE Don't knowif this works
 
 
 " Clang compilation options file for Syntastic (if needed)
@@ -57,8 +56,6 @@ autocmd BufEnter ?akefile*,*.html,*.css,*.th set noci
 let g:syntastic_check_on_open = 1
 let g:syntastic_cpp_auto_refresh_includes = 1
 let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall'
-let g:syntastic_cpp_include_dirs = [ 'cgutils', 'include/cgutils' ]
-"let g:syntastic_cpp_compiler = 'clang++'
 
 " Syntastic statusline settings
 "set statusline+=%#warningmsg#
@@ -68,6 +65,12 @@ let g:syntastic_cpp_include_dirs = [ 'cgutils', 'include/cgutils' ]
 
 " ycm config stuff
 let g:ycm_global_ycm_extra_conf = '~/.ycm_cflags_fallback.py'
+let g:ycm_complete_in_comments = 1
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
+
 
 " Rainbow parentheses plugin settings:
 let g:rainbow_active = 1
