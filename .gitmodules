@@ -43,6 +43,3 @@
 [submodule "bundle/vcscommand"]
 	path = bundle/vcscommand
 	url = https://github.com/vim-scripts/vcscommand.vim.git
-[submodule "bundle/conqueshell"]
-	path = bundle/conqueshell
-	url = https://github.com/vim-scripts/Conque-Shell.git
