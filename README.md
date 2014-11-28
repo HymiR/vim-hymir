@@ -12,4 +12,12 @@ Installation:
 2. Map the vimrc if you need it:
 	ln -s ~/.vim/vimrc ~/.vimrc
 
-3. Customise at will and enjoy ;-)
+3. Fetch the submodules:
+	cd ~/.vim
+	git submodule update --init --recursive
+
+4. Updating the whole crap:
+	cd ~/vim
+	git pull
+
+5. Customise at will and enjoy ;-)
