@@ -19,5 +19,6 @@ Installation:
 4. Updating the whole crap:
 	cd ~/vim
 	git pull
+	git submodule update --recursive
 
 5. Customise at will and enjoy ;-)
