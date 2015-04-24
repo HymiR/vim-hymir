@@ -6,7 +6,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set t_Co=256		" 256 farben für skins erlaubt
-colorscheme calmar256-dark 
+colorscheme hymir
 
 set nu				"zeilennummern aktivieren
 set nowrap			"zeilen nicht umbrechen
@@ -56,6 +56,8 @@ autocmd BufEnter ?akefile*,*.html,*.css,*.th set noci
 let g:syntastic_check_on_open = 1
 let g:syntastic_cpp_auto_refresh_includes = 1
 let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall'
+let g:syntastic_cpp_check_header = 1
+" let g:syntastic_cpp_remove_include_errors = 1
 
 " Syntastic statusline settings
 "set statusline+=%#warningmsg#
