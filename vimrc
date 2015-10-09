@@ -32,6 +32,8 @@ set history=700
 set laststatus=2	" always enable statusline
 set exrc				" allow .vimrc reading within current dir
 
+
+set pastetoggle=<F2>					" paste mode keybinding
 set cot="menuone, longest"			" disable scratch preview
 
 
